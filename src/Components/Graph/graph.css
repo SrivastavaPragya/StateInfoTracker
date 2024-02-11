@@ -1,0 +1,37 @@
+.graphComponent {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.d3-component rect {
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.d3-component rect:hover {
+  transform: scale(1.01);
+}
+
+.tooltip {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
+  padding: 8px;
+  border-radius: 4px;
+  pointer-events: none;
+  z-index: 999;
+  opacity: 0;
+}
+
+.tooltip::before {
+  content: "";
+  position: absolute;
+  border-width: 6px;
+  border-style: solid;
+  border-color: transparent transparent rgba(0, 0, 0, 0.7) transparent;
+  top: -6px; /* Adjust the value based on your design */
+  left: 50%;
+  transform: translateX(-50%);
+}

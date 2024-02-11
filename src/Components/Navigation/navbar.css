@@ -1,0 +1,9 @@
+.navbar {
+  width: 100%;
+  padding: 0.5rem;
+  background-color: #1f1f1f;
+  color: white;
+  text-align: center;
+  position: fixed;
+  opacity: 0.8;
+}

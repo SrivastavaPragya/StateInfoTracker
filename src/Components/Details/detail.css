@@ -1,0 +1,24 @@
+.detailPage {
+  width: 100vw;
+  display: grid;
+  padding-inline: 4rem;
+}
+
+.heading {
+  text-align: center;
+  margin-block: 6rem 4rem;
+}
+.subHeading {
+  text-align: center;
+  margin-block: 1rem;
+}
+.visuals {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  min-height: 20rem;
+}
+
+.sec1,
+.sec2 {
+  padding: 1rem;
+}
